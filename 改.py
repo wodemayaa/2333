@@ -5,9 +5,8 @@ print("2.明文的base64加密")
 print("3.base64乱码解密")
 print("4.创建网址二维码")
 print("5.玩弄base64")
-i=0
 temp=input("请输入相应的编号:")
-while(i<1):
+while True:
     try:
         temp=int(temp)
         while(temp<=0 or temp>=6):
@@ -26,8 +25,7 @@ if(temp==5):
     jiam=base64.b64encode(pw.encode("utf-8"))
     jiam=str(jiam,'utf-8')
     print("base64加密结果为：",jiam)
-    print("要继续将加密结果转换为明文吗？")
-    os.system("pause")
+    input("要继续将加密结果转换为明文吗？")
     jiem=base64.b64decode(jiam)
     print("再次解密结果为:",str(jiem,'utf-8'))
     
@@ -64,9 +62,6 @@ elif(temp==3):
             lm=input("请输入规范的base64码：")
     print("解码结果为:",str(jiem,'utf-8'))
     
-else:
-    print("这样的要求人家做不到啦嘤嘤嘤。")
-    print("记得输入正确的数字哦!")
 answer=input("还需要继续服务吗，输入yes即可继续使用：")
 while(answer=='yes'):
     print("请问您想实现什么功能呢?")
@@ -76,7 +71,7 @@ while(answer=='yes'):
     print("4.创建网址二维码")
     print("5.玩弄base64")
     temp=input("请输入相应的编号:")
-    while(i<1):
+    while True:
         try:
             temp=int(temp)
             while(temp<=0 or temp>=6):
@@ -85,18 +80,13 @@ while(answer=='yes'):
             break
         except:
             temp=input("请输入正确格式的数字：")
-    import base64
-    import os
-    import qrcode
-    import hashlib
     if(temp==5):
         #base64转换
         pw=input("请输入想要加密的明文：")
         jiam=base64.b64encode(pw.encode("utf-8"))
         jiam=str(jiam,'utf-8')
         print("base64加密结果为：",jiam)
-        print("要继续将加密结果转换为明文吗？")
-        os.system("pause")
+        input("要继续将加密结果转换为明文吗？")
         jiem=base64.b64decode(jiam)
         print("再次解密结果为:",str(jiem,'utf-8'))
         
@@ -124,21 +114,19 @@ while(answer=='yes'):
         
     elif(temp==3):
         lm=input("请输入想要解密的base64码：")
-        while(t<1):
+        while True:
             try:
                 jiem=base64.b64decode(lm)
                 break
             except:
                 lm=input("请输入规范的base64码：")
         print("解码结果为:",str(jiem,'utf-8'))
-        
-    else:
-        print("这样的要求人家做不到啦嘤嘤嘤。")
-    answer=input("还需要继续服务吗:(yes or no)：")
+    answer=input("还需要继续服务吗,输入yes即可继续使用:")
     yes=str(answer)
     if(answer!='yes'):
         break
-        print("感谢您的使用。")
+input("感谢您的使用。")
+
 
 
     
