@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海报轮播</title>
+<link href="style.css" rel="stylesheet"/>
+<script src="control.js">
+</script>
+</head>
+<body>
+<div id="container">
+
+  <div id="list" style="left:-600px;">
+
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext5()" onmouseout="hidetext()" src="飓风.jpg" height="400" width="600" alt="飓风奇劫"/></a>//5
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext1()" onmouseout="hidetext()" src="duye.jpg" height="400" width="600" alt="毒液：致命守护者"/></a>
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext2()" onmouseout="hidetext()" src="magic animal.jpg" height="400" width="600" alt="神奇动物：格林沃德之罪"/></a>
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext3()" onmouseout="hidetext()" src="柯南.jpg" height="400" width="600" alt="名侦探柯南：零的执行人"/></a>
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext4()" onmouseout="hidetext()" src="无名.jpg" height="400" width="600" alt="无名之辈"/></a>
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext5()" onmouseout="hidetext()" src="飓风.jpg" height="400" width="600" alt="飓风奇劫"/></a>
+    <a href="http://www.baidu.com/" target="_blank"><img onmousemove="showtext1()" onmouseout="hidetext()" src="duye.jpg" height="400" width="600" alt="毒液：致命守护者"/></a>//1
+  </div>
+
+  <div id="buttons">
+
+    <span index="1"class="on"> </span>
+
+    <span index="2"></span>
+
+    <span index="3"></span>
+
+    <span index="4"></span>
+
+    <span index="5"></span>
+
+  </div>
+
+  <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+
+  <a href="javascript:;" class="arrow" id="next">&gt;</a>
+
+</div>
+<div style="width:800px;height:100px;text-align:center;margin: 0 auto">
+  <a id="describetext"><span style="font-size:40px;color: darkorange"><b>欢迎来到星影!</b></span><br>将鼠标移至海报上查看电影详细信息</a>
+</div>
+<div class="bigcounter">
+  <div class="smallcounter">
+    <table border="0" style="margin: 0 auto" cellpadding="5" cellspacing="5">
+      <tr style="text-align: left;font-size: 25px" >
+        <th colspan="4">热播</th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">最新</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">最热</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">大牌</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">好评</a></th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">推荐</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">解闷</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">情侣</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">其他</a></th>
+      </tr>
+    </table>
+  </div>
+  <div class="smallcounter" style="margin-left: 20px">
+    <table border="0" style="margin: 0 auto" cellpadding="5" cellspacing="5">
+      <tr style="text-align: left;font-size: 25px" >
+        <th colspan="4">地区</th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">大陆</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">港台</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">美国</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">韩国</a></th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">日本</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">法国</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">印度</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">其他</a></th>
+      </tr>
+    </table>
+  </div>
+  <div class="smallcounter" style="margin-left: 20px">
+    <table border="0" style="margin: 0 auto" cellpadding="5" cellspacing="5">
+      <tr style="text-align: left;font-size: 25px" >
+        <th colspan="4">类型</th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">喜剧</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">恐怖</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">爱情</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">动作</a></th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">科幻</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">犯罪</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">战争</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">惊悚</a></th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="smallcounter" style="margin-left: 20px">
+    <table border="0" style="margin: 0 auto" cellpadding="5" cellspacing="5">
+      <tr style="text-align: left;font-size: 25px" >
+        <th colspan="4">上映时间</th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2018</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2017</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2016</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2015</a></th>
+      </tr>
+      <tr>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2014</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2013</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">2012</a></th>
+        <th><a href="http://www.baidu.com/" target="_blank" class="change">更多…</a></th>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
